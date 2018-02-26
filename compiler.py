@@ -18,7 +18,7 @@ def compile():
 def add_note():
     if request.method == 'POST':
         f = open('test.c', 'w')
-        print request.form['note']
+        print(request.form['note'])
         f.write(request.form['note'])  # python will convert \n to os.linesep
         f.close()
 

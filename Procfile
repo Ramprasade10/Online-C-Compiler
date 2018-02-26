@@ -1,1 +1,1 @@
-web: python compiler.py
+web: gunicorn app:compiler
